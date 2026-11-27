@@ -1,0 +1,22 @@
+/* Modo wireframe: misma estructura, baja fidelidad (se activa con ?wf) */
+html.wf { font-family: Arial, Helvetica, sans-serif; }
+html.wf body { background: #fff; }
+html.wf *, html.wf *::before { color: #555 !important; box-shadow: none !important; font-family: inherit !important; }
+html.wf .card, html.wf .table-wrap, html.wf .input, html.wf .slot, html.wf .chip, html.wf .segmented label {
+  background: #fff !important; border: 2px solid #9CA3AF !important;
+}
+html.wf .btn { background: #E5E7EB !important; border: 2px solid #6B7280 !important; }
+html.wf .topbar, html.wf .compare-bar, html.wf .auth-side { background: #F3F4F6 !important; border-bottom: 2px dashed #9CA3AF; }
+html.wf .badge, html.wf .nav a[aria-current="page"], html.wf .chip.is-active, html.wf .chip[aria-pressed="true"],
+html.wf .slot[aria-pressed="true"], html.wf .alert { background: #F3F4F6 !important; border-color: #6B7280 !important; }
+html.wf .thumb, html.wf .avatar {
+  background: repeating-linear-gradient(45deg, #F3F4F6 0 10px, #E5E7EB 10px 20px) !important;
+  border: 2px solid #9CA3AF;
+}
+html.wf .thumb > *, html.wf .avatar > * { visibility: hidden; }
+html.wf .icon { opacity: .4; }
+html.wf .timeline li.done { border-color: #6B7280 !important; }
+html.wf::before {
+  content: "WIREFRAME - baja fidelidad"; position: fixed; right: 12px; bottom: 12px; z-index: 9;
+  background: #111; color: #fff !important; padding: 4px 10px; font: 12px monospace;
+}

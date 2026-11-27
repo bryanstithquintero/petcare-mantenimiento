@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customer Journey Map | PetCare</title>
+<link rel="stylesheet" href="css/petcare.css">
+<style>
+  .cjm { width: 100%; border-collapse: separate; border-spacing: 6px; font-size: 14px; }
+  .cjm th[scope=row] { width: 120px; text-align: left; font: 600 14px var(--font-head); color: var(--primary-dark); vertical-align: top; padding-top: 10px; }
+  .cjm thead th { background: var(--primary); color: #fff; border-radius: 8px; padding: 10px; font: 600 15px var(--font-head); }
+  .cjm td { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px; vertical-align: top; }
+  .cjm tr.pain td { background: #FEF2F2; border-color: #FECACA; }
+  .cjm tr.opp td { background: #F0FDF4; border-color: #BBF7D0; }
+  .mood { font-weight: 700; }
+  .m-pos { color: #166534; } .m-neu { color: #92400E; } .m-neg { color: #991B1B; }
+  code { font-size: 12px; background: var(--bg); padding: 1px 4px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<main class="page"><div class="container" style="max-width:1280px">
+<h1>Customer Journey Map con el prototipo</h1>
+<p class="muted">Persona: Laura Gómez, 29 años, dueña de Max (perro criollo). Objetivo: reservar un baño para Max sin llamar a varios lugares.</p>
+<table class="cjm">
+<thead><tr><th></th><th>1. Acceder</th><th>2. Buscar</th><th>3. Comparar</th><th>4. Reservar</th><th>5. Seguir la solicitud</th></tr></thead>
+<tbody>
+<tr><th scope="row">Hace</th>
+<td>Crea su cuenta como propietaria y registra a Max con sus notas.</td>
+<td>Elige Peluquería, filtra por Chapinero y fecha con cupo.</td>
+<td>Marca dos opciones y las ve lado a lado.</td>
+<td>Escoge a Max, la fecha y un horario libre; deja una nota.</td>
+<td>Revisa el estado en Mis solicitudes hasta que queda Finalizada.</td></tr>
+<tr><th scope="row">Piensa</th>
+<td>"¿Me van a pedir muchos datos?"</td>
+<td>"¿Quién atiende el sábado cerca de mi casa?"</td>
+<td>"¿Cuál me sale mejor por precio y lo que incluye?"</td>
+<td>"¿Seguro sí hay cupo a esa hora?"</td>
+<td>"¿Ya me aceptaron? ¿Ya está listo Max?"</td></tr>
+<tr><th scope="row">Siente</th>
+<td><span class="mood m-neu">Neutral:</span> algo de pereza por el registro.</td>
+<td><span class="mood m-pos">Aliviada:</span> todo está en un solo lugar.</td>
+<td><span class="mood m-pos">Segura:</span> decide con información.</td>
+<td><span class="mood m-neu">Expectante:</span> espera la respuesta del proveedor.</td>
+<td><span class="mood m-pos">Tranquila:</span> sabe en qué va la atención.</td></tr>
+<tr><th scope="row">Usa</th>
+<td><code>registro.html</code> <code>mascotas.html</code></td>
+<td><code>buscar.html</code></td>
+<td><code>comparar.html</code> <code>servicio.html</code></td>
+<td><code>reservar.html</code> <code>reserva-ok.html</code></td>
+<td><code>solicitudes.html</code></td></tr>
+<tr class="pain"><th scope="row">Dolores</th>
+<td>Formularios largos al empezar.</td>
+<td>Antes: precios y horarios regados en chats y redes.</td>
+<td>Antes: tenía que escribirle a cada proveedor.</td>
+<td>Antes: no sabía si había cupo hasta que le respondían.</td>
+<td>Antes: no sabía si la cita seguía en pie.</td></tr>
+<tr class="opp"><th scope="row">Decisión de diseño</th>
+<td>Registro de 4 campos y elección de rol con tarjetas grandes.</td>
+<td>Chips de categoría y filtro "solo con cupo" activado por defecto.</td>
+<td>Tabla comparativa de 2 a 3 servicios con botón Reservar en cada columna.</td>
+<td>Horarios sin cupo tachados y deshabilitados (RF-14); resumen del horario elegido.</td>
+<td>Línea de tiempo Pendiente → Aceptada → En atención → Finalizada.</td></tr>
+</tbody></table>
+</div></main>
+</body>
+</html>

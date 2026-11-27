@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solicitudes recibidas | PetCare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/petcare.css">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<header class="topbar"><div class="container">
+<a class="brand" href="proveedor.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="6" cy="9" r="2.2"/><circle cx="10" cy="5.5" r="2.2"/><circle cx="14" cy="5.5" r="2.2"/><circle cx="18" cy="9" r="2.2"/><path d="M12 11c-3 0-6 3.5-6 6.2C6 19 7.4 20 9 20c1.3 0 2-.6 3-.6s1.7.6 3 .6c1.6 0 3-1 3-2.8 0-2.7-3-6.2-6-6.2z"/></svg> PetCare</a>
+<nav class="nav" aria-label="Principal"><a href="proveedor.html" aria-current="page">Solicitudes recibidas</a><a href="proveedor-servicios.html">Mis servicios y horarios</a></nav>
+<div class="user-chip"><span class="avatar" style="width:36px;height:36px;font-size:14px">PS</span>
+<span>Peludos Spa</span><a class="btn btn-ghost btn-sm" href="login.html">Salir</a></div>
+</div></header>
+<main class="page"><div class="container stack">
+<h1>Solicitudes recibidas</h1>
+<div class="grid grid-4">
+<div class="card card-tight"><small>Por responder</small><p class="stat" style="margin:0">2</p></div>
+<div class="card card-tight"><small>Para hoy</small><p class="stat" style="margin:0">1</p></div>
+<div class="card card-tight"><small>Atendidas este mes</small><p class="stat" style="margin:0">27</p></div>
+<div class="card card-tight"><small>Ingresos estimados del mes</small><p class="stat" style="margin:0">$1,2 M</p></div></div>
+<div class="alert alert-warn"><small>Tienes 2 solicitudes pendientes. Responde antes de 24 horas para que el propietario no la pierda.</small></div>
+<div class="table-wrap"><table class="table"><thead><tr><th>Mascota y propietario</th><th>Servicio</th><th>Fecha</th><th>Estado</th><th>Acción</th></tr></thead>
+<tbody><tr><td><strong>Max</strong><br><small>Perro · 18 kg · Laura Gómez</small><br><small>Nota: Le da miedo el secador.</small></td><td>Baño y corte</td><td>Sáb 16 nov, 9:30 a. m.</td><td><span class="badge st-pendiente">Pendiente</span></td><td><button class="btn btn-primary btn-sm">Aceptar</button> <button class="btn btn-danger btn-sm">Rechazar</button></td></tr><tr><td><strong>Toby</strong><br><small>Perro · 7 kg · Andrés Ruiz</small><br><small>Nota: Piel sensible.</small></td><td>Baño medicado</td><td>Sáb 16 nov, 11:00 a. m.</td><td><span class="badge st-pendiente">Pendiente</span></td><td><button class="btn btn-primary btn-sm">Aceptar</button> <button class="btn btn-danger btn-sm">Rechazar</button></td></tr><tr><td><strong>Max</strong><br><small>Perro · 18 kg · Laura Gómez</small></td><td>Baño y corte</td><td>Sáb 16 nov, 10:00 a. m.</td><td><span class="badge st-aceptada">Aceptada</span></td><td><button class="btn btn-secondary btn-sm">Iniciar atención</button></td></tr><tr><td><strong>Kira</strong><br><small>Gata · 3 kg · Sofía León</small></td><td>Baño y secado</td><td>Hoy 2:00 p. m.</td><td><span class="badge st-atencion">En atención</span></td><td><button class="btn btn-secondary btn-sm">Marcar finalizada</button></td></tr></tbody></table></div>
+</div></main><footer class="footer">PetCare - prototipo académico (Análisis y diseño de sistemas, Ibero 2026)</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
