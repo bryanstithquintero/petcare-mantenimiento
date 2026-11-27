@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reservar | PetCare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/petcare.css">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<header class="topbar"><div class="container">
+<a class="brand" href="panel.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="6" cy="9" r="2.2"/><circle cx="10" cy="5.5" r="2.2"/><circle cx="14" cy="5.5" r="2.2"/><circle cx="18" cy="9" r="2.2"/><path d="M12 11c-3 0-6 3.5-6 6.2C6 19 7.4 20 9 20c1.3 0 2-.6 3-.6s1.7.6 3 .6c1.6 0 3-1 3-2.8 0-2.7-3-6.2-6-6.2z"/></svg> PetCare</a>
+<nav class="nav" aria-label="Principal"><a href="panel.html">Inicio</a><a href="buscar.html">Buscar servicios</a><a href="mascotas.html">Mis mascotas</a><a href="solicitudes.html">Mis solicitudes</a></nav>
+<div class="user-chip"><span class="avatar" style="width:36px;height:36px;font-size:14px">LG</span>
+<span>Laura Gómez</span><a class="btn btn-ghost btn-sm" href="login.html">Salir</a></div>
+</div></header>
+<main class="page"><div class="container stack" style="max-width:820px">
+<a href="servicio.html">← Volver al servicio</a><h1>Reservar: Baño y corte</h1><p class="muted">Peludos Spa · $45.000</p>
+<form class="card stack" action="reserva-ok.html" method="get">
+<fieldset style="border:0;padding:0;margin:0"><legend><h2>1. ¿Para qué mascota?</h2></legend>
+<div class="segmented"><label><input type="radio" name="m" checked><span><strong>Max</strong><br><small>Perro · 18 kg</small></span></label>
+<label><input type="radio" name="m"><span><strong>Luna</strong><br><small>Gata · 4 kg</small></span></label></div></fieldset>
+<div><h2>2. Fecha y hora</h2>
+<div class="field" style="max-width:260px"><label for="rf">Fecha</label><input class="input" id="rf" type="date" value="2026-11-16"></div>
+<p class="muted">Horarios disponibles. Los tachados ya no tienen cupo.</p>
+<div class="slots" data-toggle-group data-output="#sel"><button type="button" class="slot" aria-pressed="false" data-label="Sáb 16 nov, 8:00" disabled aria-label="8:00 sin cupo">8:00</button><button type="button" class="slot" aria-pressed="false" data-label="Sáb 16 nov, 9:30">9:30</button><button type="button" class="slot" aria-pressed="false" data-label="Sáb 16 nov, 11:00">11:00</button><button type="button" class="slot" aria-pressed="false" data-label="Sáb 16 nov, 12:30" disabled aria-label="12:30 sin cupo">12:30</button><button type="button" class="slot" aria-pressed="false" data-label="Sáb 16 nov, 2:00">2:00</button><button type="button" class="slot" aria-pressed="false" data-label="Sáb 16 nov, 3:30">3:30</button><button type="button" class="slot" aria-pressed="false" data-label="Sáb 16 nov, 5:00" disabled aria-label="5:00 sin cupo">5:00</button></div>
+<p style="margin-top:12px">Seleccionado: <strong id="sel">ninguno</strong></p></div>
+<div class="field"><label for="rn"><h2 style="margin:0">3. Notas para el proveedor (opcional)</h2></label>
+<textarea class="input" id="rn" rows="3">Le da miedo el secador, por favor secar con toalla.</textarea></div>
+<div class="alert alert-info"><small>Antes de enviar, PetCare verifica que el horario siga disponible. El proveedor tiene hasta 24 horas para aceptar o rechazar.</small></div>
+<button class="btn btn-accent btn-block" type="submit">Enviar solicitud</button>
+</form></div></main><footer class="footer">PetCare - prototipo académico (Análisis y diseño de sistemas, Ibero 2026)</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

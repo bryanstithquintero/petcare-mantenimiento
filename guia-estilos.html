@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía de estilos | PetCare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/petcare.css">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<main class="page"><div class="container stack">
+<div><a class="brand" href="login.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="6" cy="9" r="2.2"/><circle cx="10" cy="5.5" r="2.2"/><circle cx="14" cy="5.5" r="2.2"/><circle cx="18" cy="9" r="2.2"/><path d="M12 11c-3 0-6 3.5-6 6.2C6 19 7.4 20 9 20c1.3 0 2-.6 3-.6s1.7.6 3 .6c1.6 0 3-1 3-2.8 0-2.7-3-6.2-6-6.2z"/></svg> PetCare</a><h1 style="margin-top:12px">Guía de estilos (UI Kit)</h1>
+<p class="muted">Sistema visual del prototipo. Colores con contraste AA (WCAG 2.1), objetivos táctiles de 44 px y foco visible.</p></div>
+<section><h2>Color</h2><div class="grid grid-4"><div class="card card-tight"><div style="height:64px;border-radius:8px;background:var(--primary);border:1px solid var(--border)"></div><p style="margin:8px 0 0"><strong>Primario</strong><br><small>#0F766E · botones, enlaces</small></p></div><div class="card card-tight"><div style="height:64px;border-radius:8px;background:var(--primary-dark);border:1px solid var(--border)"></div><p style="margin:8px 0 0"><strong>Primario oscuro</strong><br><small>#115E59 · hover, cifras</small></p></div><div class="card card-tight"><div style="height:64px;border-radius:8px;background:var(--primary-light);border:1px solid var(--border)"></div><p style="margin:8px 0 0"><strong>Primario claro</strong><br><small>#CCFBF1 · selección</small></p></div><div class="card card-tight"><div style="height:64px;border-radius:8px;background:var(--accent);border:1px solid var(--border)"></div><p style="margin:8px 0 0"><strong>Acento</strong><br><small>#C2410C · acción principal</small></p></div><div class="card card-tight"><div style="height:64px;border-radius:8px;background:var(--bg);border:1px solid var(--border)"></div><p style="margin:8px 0 0"><strong>Fondo</strong><br><small>#F6F7F4 · fondo de página</small></p></div><div class="card card-tight"><div style="height:64px;border-radius:8px;background:var(--surface);border:1px solid var(--border)"></div><p style="margin:8px 0 0"><strong>Superficie</strong><br><small>#FFFFFF · tarjetas</small></p></div><div class="card card-tight"><div style="height:64px;border-radius:8px;background:var(--text);border:1px solid var(--border)"></div><p style="margin:8px 0 0"><strong>Texto</strong><br><small>#1F2937 · texto principal</small></p></div><div class="card card-tight"><div style="height:64px;border-radius:8px;background:var(--muted);border:1px solid var(--border)"></div><p style="margin:8px 0 0"><strong>Texto secundario</strong><br><small>#4B5563 · ayudas</small></p></div><div class="card card-tight"><div style="height:64px;border-radius:8px;background:var(--border);border:1px solid var(--border)"></div><p style="margin:8px 0 0"><strong>Borde</strong><br><small>#D1D5DB · divisores</small></p></div><div class="card card-tight"><div style="height:64px;border-radius:8px;background:var(--danger);border:1px solid var(--border)"></div><p style="margin:8px 0 0"><strong>Error</strong><br><small>#B91C1C · errores, eliminar</small></p></div></div></section>
+<section class="card"><h2>Tipografía</h2>
+<p style="font:700 28px var(--font-head);margin:0">Poppins Bold 28 · Títulos H1</p>
+<p style="font:600 22px var(--font-head);margin:8px 0 0">Poppins SemiBold 22 · H2</p>
+<p style="font:600 18px var(--font-head);margin:8px 0 0">Poppins SemiBold 18 · H3</p>
+<p style="margin:8px 0 0">Inter Regular 16 · Texto de párrafo y formularios</p>
+<p class="muted" style="margin:8px 0 0">Inter Regular 14 · Texto de ayuda y metadatos</p></section>
+<section class="card"><h2>Botones</h2><div class="row">
+<button class="btn btn-accent">Acción principal</button><button class="btn btn-primary">Primario</button>
+<button class="btn btn-secondary">Secundario</button><button class="btn btn-ghost">Terciario</button>
+<button class="btn btn-danger">Peligro</button><button class="btn" disabled>Deshabilitado</button>
+<button class="btn btn-primary btn-sm">Pequeño</button></div></section>
+<section class="card"><h2>Campos de formulario</h2><div class="grid grid-3">
+<div class="field"><label for="g1">Normal</label><input class="input" id="g1" placeholder="Texto de ejemplo"></div>
+<div class="field"><label for="g2">Con error</label><input class="input is-error" id="g2" value="laura@"><span class="error-msg">Escribe un correo válido.</span></div>
+<div class="field"><label for="g3">Lista</label><select class="input" id="g3"><option>Chapinero</option></select></div></div>
+<label class="check"><input type="checkbox" checked><span>Casilla de verificación</span></label></section>
+<section class="card"><h2>Estados de una solicitud</h2><div class="row">
+<span class="badge st-pendiente">Pendiente</span><span class="badge st-aceptada">Aceptada</span><span class="badge st-atencion">En atención</span>
+<span class="badge st-finalizada">Finalizada</span><span class="badge st-rechazada">Rechazada</span><span class="badge st-cancelada">Cancelada</span></div>
+<ol class="timeline" style="margin-top:16px"><li class="done">Pendiente</li><li class="done">Aceptada</li><li>En atención</li><li>Finalizada</li></ol></section>
+<section class="card"><h2>Filtros, horarios y alertas</h2>
+<div class="row"><span class="chip is-active">Peluquería</span><span class="chip">Veterinaria</span><span class="chip">Paseo</span></div>
+<div class="slots" style="margin-top:16px;max-width:420px"><button class="slot">9:30</button><button class="slot" aria-pressed="true">11:00</button><button class="slot" disabled>12:30</button></div>
+<div class="stack" style="margin-top:16px"><div class="alert alert-info">Información</div><div class="alert alert-ok">Confirmación</div><div class="alert alert-warn">Advertencia</div></div></section>
+<section><h2>Tarjetas</h2><div class="grid grid-3"><article class="card card-tight stack">
+<div class="thumb"><span>Peluquería</span></div>
+<div><h3 style="margin:0">Baño y corte</h3><small>Peludos Spa · Chapinero</small></div>
+<div class="row between"><strong style="font-size:18px">$45.000</strong><small>Próximo cupo: Hoy 3:00 p. m.</small></div>
+<div class="row between"><label class="check"><input type="checkbox" data-compare ><span>Comparar</span></label>
+<a class="btn btn-secondary btn-sm" href="servicio.html">Ver detalle</a></div></article>
+<div class="card"><small>Indicador</small><p class="stat" style="margin:0">27</p><small>Atendidas este mes</small></div></div></section>
+<section class="card"><h2>Espaciado y bordes</h2><p>Escala de 4 px: 4, 8, 12, 16, 24, 32, 48. Radios: 6 px (chips internos), 10 px (botones y campos), 16 px (tarjetas).</p></section>
+</div></main><footer class="footer">PetCare - prototipo académico (Análisis y diseño de sistemas, Ibero 2026)</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

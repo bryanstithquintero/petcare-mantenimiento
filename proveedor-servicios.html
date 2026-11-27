@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mis servicios y horarios | PetCare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/petcare.css">
+<link rel="stylesheet" href="css/wireframe.css">
+</head>
+<body>
+<header class="topbar"><div class="container">
+<a class="brand" href="proveedor.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="6" cy="9" r="2.2"/><circle cx="10" cy="5.5" r="2.2"/><circle cx="14" cy="5.5" r="2.2"/><circle cx="18" cy="9" r="2.2"/><path d="M12 11c-3 0-6 3.5-6 6.2C6 19 7.4 20 9 20c1.3 0 2-.6 3-.6s1.7.6 3 .6c1.6 0 3-1 3-2.8 0-2.7-3-6.2-6-6.2z"/></svg> PetCare</a>
+<nav class="nav" aria-label="Principal"><a href="proveedor.html">Solicitudes recibidas</a><a href="proveedor-servicios.html" aria-current="page">Mis servicios y horarios</a></nav>
+<div class="user-chip"><span class="avatar" style="width:36px;height:36px;font-size:14px">PS</span>
+<span>Peludos Spa</span><a class="btn btn-ghost btn-sm" href="login.html">Salir</a></div>
+</div></header>
+<main class="page"><div class="container stack">
+<div class="row between"><h1>Mis servicios y horarios</h1><button class="btn btn-accent">Publicar servicio</button></div>
+<div class="table-wrap"><table class="table"><thead><tr><th>Servicio</th><th>Categoría</th><th>Precio</th><th>Duración</th><th>Estado</th><th></th></tr></thead><tbody>
+<tr><td><strong>Baño y corte</strong></td><td>Peluquería</td><td>$45.000</td><td>1 h 30 min</td><td><span class="badge st-finalizada">Activo</span></td><td><button class="btn btn-secondary btn-sm">Editar</button> <button class="btn btn-ghost btn-sm">Desactivar</button></td></tr>
+<tr><td><strong>Corte de uñas</strong></td><td>Peluquería</td><td>$15.000</td><td>20 min</td><td><span class="badge st-cancelada">Inactivo</span></td><td><button class="btn btn-secondary btn-sm">Editar</button> <button class="btn btn-ghost btn-sm">Activar</button></td></tr>
+</tbody></table></div>
+<section class="card"><h2>Disponibilidad semanal</h2><p class="muted">PetCare solo ofrece a los propietarios los horarios que marques aquí.</p>
+<div class="table-wrap"><table class="table"><thead><tr><th>Día</th><th>Abre</th><th>Cierra</th><th></th></tr></thead><tbody><tr><th scope="row">Lun</th><td><input class="input" value="8:00 a. m." aria-label="Apertura Lun"></td><td><input class="input" value="6:00 p. m." aria-label="Cierre Lun"></td><td><label class="check"><input type="checkbox" checked><span>Atiende</span></label></td></tr><tr><th scope="row">Mar</th><td><input class="input" value="8:00 a. m." aria-label="Apertura Mar"></td><td><input class="input" value="6:00 p. m." aria-label="Cierre Mar"></td><td><label class="check"><input type="checkbox" checked><span>Atiende</span></label></td></tr><tr><th scope="row">Mié</th><td><input class="input" value="8:00 a. m." aria-label="Apertura Mié"></td><td><input class="input" value="6:00 p. m." aria-label="Cierre Mié"></td><td><label class="check"><input type="checkbox" checked><span>Atiende</span></label></td></tr><tr><th scope="row">Jue</th><td><input class="input" value="8:00 a. m." aria-label="Apertura Jue"></td><td><input class="input" value="6:00 p. m." aria-label="Cierre Jue"></td><td><label class="check"><input type="checkbox" checked><span>Atiende</span></label></td></tr><tr><th scope="row">Vie</th><td><input class="input" value="8:00 a. m." aria-label="Apertura Vie"></td><td><input class="input" value="6:00 p. m." aria-label="Cierre Vie"></td><td><label class="check"><input type="checkbox" checked><span>Atiende</span></label></td></tr><tr><th scope="row">Sáb</th><td><input class="input" value="8:00 a. m." aria-label="Apertura Sáb"></td><td><input class="input" value="6:00 p. m." aria-label="Cierre Sáb"></td><td><label class="check"><input type="checkbox" checked><span>Atiende</span></label></td></tr><tr><th scope="row">Dom</th><td><input class="input" value="" aria-label="Apertura Dom"></td><td><input class="input" value="" aria-label="Cierre Dom"></td><td><label class="check"><input type="checkbox" ><span>Atiende</span></label></td></tr></tbody></table></div>
+<div class="field" style="max-width:260px;margin-top:16px"><label for="cap">Mascotas por franja</label><input class="input" id="cap" type="number" value="2" min="1"></div>
+<button class="btn btn-primary">Guardar disponibilidad</button></section>
+</div></main><footer class="footer">PetCare - prototipo académico (Análisis y diseño de sistemas, Ibero 2026)</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
