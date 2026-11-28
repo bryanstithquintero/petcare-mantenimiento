@@ -23,6 +23,24 @@
     });
   });
 
+  const barra = document.querySelector(".topbar");
+  const menu = barra && barra.querySelector(".nav");
+  if (menu) {
+    menu.id = "menu-principal";
+    const botonMenu = document.createElement("button");
+    botonMenu.type = "button";
+    botonMenu.className = "btn btn-secondary btn-sm menu-toggle";
+    botonMenu.textContent = "Menú";
+    botonMenu.setAttribute("aria-expanded", "false");
+    botonMenu.setAttribute("aria-controls", "menu-principal");
+    botonMenu.addEventListener("click", () => {
+      const abierto = barra.classList.toggle("nav-open");
+      botonMenu.setAttribute("aria-expanded", String(abierto));
+      botonMenu.textContent = abierto ? "Cerrar" : "Menú";
+    });
+    barra.querySelector(".brand").after(botonMenu);
+  }
+
   const compareChecks = document.querySelectorAll("input[data-compare]");
   const counter = document.querySelector("#compare-count");
   const compareBtn = document.querySelector("#compare-btn");

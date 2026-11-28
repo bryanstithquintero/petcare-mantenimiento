@@ -172,3 +172,15 @@ small, .muted { color: var(--muted); font-size: 14px; }
 .footer { text-align: center; padding: var(--s5); color: var(--muted); font-size: 13px; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 .icon { width: 20px; height: 20px; flex: none; }
+
+/* HU-03: menú adaptado a celulares */
+.menu-toggle { display: none; }
+@media (max-width: 820px) {
+  .topbar .container { padding-top: var(--s2); padding-bottom: var(--s2); }
+  .menu-toggle { display: inline-flex; order: 2; }
+  .topbar .nav { display: none; order: 3; width: 100%; flex-direction: column; padding-bottom: var(--s2); }
+  .topbar .nav a { padding: var(--s3); }
+  .topbar.nav-open .nav { display: flex; }
+  .user-chip { order: 4; width: 100%; justify-content: space-between; display: none; }
+  .topbar.nav-open .user-chip { display: flex; }
+}
